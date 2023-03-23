@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html,body{
+            width: 100vw;
+            height: auto;
+            font-size: 15px;
+            overflow-x: hidden;
+            font-family: 'Roboto', sans-serif;
+        }
+        header
+        {
+            width: 100vw;
+            height:83vh;
+            background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),  url("resources/images/header-img.jpg");
+            background-repeat: no-repeat;
+            background-size:cover;
+            background-position: center;
+            position: relative;
+            
+        }
+        nav
+        {
+            width: 100vw;
+            height:auto;
+            display: flex;
+            padding:0 3rem;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+            color:white;
+        }
+        nav img
+        {
+            width: 5rem;
+            height:auto;
+            fill:white;
+        }
+        .links
+        {
+            list-style:none;
+            text-transform: uppercase;
+        }
+        .links li
+        {
+            display: inline-block;
+            margin-right: 4.5rem;
+            font-size: 1.3rem;
+        }
+        .header-main
+        {
+            position: absolute;
+            left:50%;
+            top:50%;
+            transform: translate(-50%,-50%);
+            
+        }
+        .header-main2
+        {
+            position: absolute;
+            left:50%;
+            top:70%;
+            color:white;
+            transform: translate(-50%,-50%);
+            
+        }
+        .header-main h1{
+            font-size: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-align: center;
+            line-height: 1.2;
+            color:rgb(167, 163, 163);
+            animation-name: glow;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes glow
+        {
+            0%,50%,70%,100%{
+                color:rgb(167, 163, 163);
+                text-shadow: none;
+            }
+            61%,71%{
+                color:rgb(159, 23, 23);
+                text-shadow: 0 0 5px rgb(224, 28, 28),
+                            0 0 8px rgb(192, 17, 17),
+                            0 0 12px rgb(170, 28, 28);
+            }
+        }
+        .section
+        {
+            width: 100vw;
+            height: 18vh;
+            background-color: rgb(14, 9, 9);
+            display: flex;
+        }
+        .cse , .ise , .ece
+        {
+            flex:1;
+            background-position:center;
+            background-size: center;
+            background-repeat: no-repeat;
+            transition: all .2s linear;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color:white;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+        }
+        .cse:hover , .ise:hover , .ece:hover
+        {
+            transform: translateY(-2.5rem);
+        }
+        .cse
+        {
+            background:linear-gradient(to top right,#EE9CA7a0,#FFDDE1a0), url("resources/images/cse2.jpg");
+        }
+        .ise
+        {
+            background:linear-gradient(to top right,#2e3192a0 ,#1bffffa0), url("resources/images/ise2.jpg");
+        }
+        .ece
+        {
+            background:linear-gradient(to top right,#614385a0,#516395a0), url("resources/images/ece2.jpg");
+        }
+        a
+        {
+            text-decoration: none;
+            height: auto;
+            width: auto;
+            color:white;
+            transition: all .2s linear;
+        }
+        .a:hover{
+           color:red
+        }   
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="resources/images/alvas.png" alt="">
+            <ul class="links">
+                <a href="index.html" class="a"><li>Home</li></a>
+               
+               <a href="p1.html" class="a"><li>ISE</li></a>
+               <a href="p1.html" class="a"><li>CSE</li></a>
+               <a href="p3.html" class="a"><li>Know More</li></a>
+            </ul>
+        </nav>
+        <div class="header-main">
+            <h1>Alvas Institute of Engineering and Technology
+            </h1>
+            
+            <p></p>
+        </div>
+        <div class="header-main2">
+            <h1>Study Materials
+            </h1>
+            
+            <p></p>
+        </div>
+        
+    </header>
+    <div class="section">
+       
+        <a href="p1.html" class="ise"><div ><h2>Information Science and Engineering</h2></div></a>
+        <a href="p1.html" class="ise"><div ><h2>Computer Science and Engineering</h2></div></a>
+    </div>
+</body>
+</html>
